@@ -1,0 +1,25 @@
+{
+  "name": "gb_js2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StGenry/gb_JS2.git"
+  },
+  "author": "Ivan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StGenry/gb_JS2/issues"
+  },
+  "homepage": "https://github.com/StGenry/gb_JS2#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
