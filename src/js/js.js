@@ -488,10 +488,17 @@ $(document).ready(() => {
     const review = new Review('http://localhost:3000/comments/', '#message');
     review.render();
     // задача 6.2
-    review.showMessage('#message', 'Hi!', 'Error');
+    //review.showMessage('#message', 'Hi!', 'Error');
 
     // задача 6.1 датапикер, эффект "Bounce"
     $("#birthday").datepicker({
         showAnim: "bounce"
     });
+
+    // задача 6.3
+    const gallery = new Gallery({
+        carouselContent: $(".carousel__content")
+    });
+    gallery.init();
+
 });
