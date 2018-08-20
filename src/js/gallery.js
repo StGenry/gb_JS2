@@ -1,3 +1,4 @@
+"use strict"
 class Gallery {
     constructor(options = {}) {
         this.options = {
