@@ -8,8 +8,10 @@ import sourceMaps from 'gulp-sourcemaps';
 import concat from 'gulp-concat';
 import minimizeCSS from 'gulp-clean-css'; // CSS compression
 import rigger from 'gulp-rigger';
-import minimizeJS from 'gulp-uglify'; // JS compression
+import minimizeJS from 'gulp-uglify-es'; // JS compression
 import imagemin from 'gulp-imagemin'; // image compression
+import pngquant from 'imagemin-pngquant';
+
 // import prefixer from 'gulp-autoprefixer'; // parse CSS and add vendor prefixes to CSS 
 
 // test gulp
@@ -146,7 +148,7 @@ gulp.task('build', [
 ]);
 
 // task by default (so we don't need to use task name after 'npm run gulp')
-gulp.task('default', ['build']);
+//gulp.task('default', ['build']);
 
 // task for prod-demo
-//gulp.task('default', ['build', 'watch']);
+gulp.task('default', ['build', 'watch']);
