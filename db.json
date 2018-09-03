@@ -1,0 +1,99 @@
+{
+    "rules": [{
+            "selector": "input[name='user-name']",
+            "methods": [{
+                    "name": "mustContainLetters"
+                },
+                {
+                    "name": "length",
+                    "args": [">=", 1]
+                },
+                {
+                    "name": "length",
+                    "args": ["<=", 50]
+                }
+            ]
+        },
+        {
+            "selector": "input[name='comment-id']",
+            "methods": [{
+                    "name": "mustContainNumbers"
+                },
+                {
+                    "name": "length",
+                    "args": [">=", 1]
+                },
+                {
+                    "name": "length",
+                    "args": ["<=", 5]
+                }
+            ]
+        }, {
+            "selector": "textarea",
+            "methods": [{
+                "name": "inTemplate",
+                "args": ["любые символы", "."]
+            }]
+        }
+    ],
+    "selects_content": [{
+            "id": "#town_choice",
+            "type": "options",
+            "content": [
+                "Новгород",
+                "Москва",
+                "Новосибирск",
+                "Загоновичи",
+                "Рим",
+                "Питер",
+                "Усть-жусть"
+            ]
+        },
+        {
+            "id": "#town_autocomplete",
+            "type": "autocomplete",
+            "content": [
+                "Новгород",
+                "Москва",
+                "Новосибирск",
+                "Загоновичи",
+                "Рим",
+                "Питер",
+                "Усть-жусть"
+            ]
+        }
+
+    ],
+    "comments": [{
+            "user": "ivan",
+            "text": "ivan left message #1",
+            "approved": "true",
+            "id": 1
+        },
+        {
+            "user": "ivan",
+            "text": "ivan left message #4",
+            "approved": "true",
+            "id": 4
+        },
+        {
+            "user": "www",
+            "text": "www left message",
+            "approved": "true",
+            "id": 5
+        }
+    ],
+    "users": [{
+            "id": 1,
+            "user": "User1",
+            "access": "user",
+            "approved": false
+        },
+        {
+            "id": 2,
+            "user": "User2",
+            "access": "admin",
+            "approved": false
+        }
+    ]
+}
